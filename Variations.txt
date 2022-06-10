@@ -1,0 +1,35 @@
+Create an app that generates a randomized workout based on:
+1. Promoting muscle confusion via random excercise order 
+
+Horizontal Push
+- BP
+- PUP
+
+Horizontal Pull
+- DBR
+- RR
+
+Vertical Push
+- SOHP
+- PKE
+
+Vertical Pull
+- PU
+- CU
+
+Hip Hinge
+- HT
+- RDL
+
+Knee Hinge
+- BSQ
+- GSQ
+
+Ankle Hinge
+- CR
+
+Anterior Core
+- VUP
+
+Posterior Core
+- SM

@@ -1,0 +1,10 @@
+Type,Plane,Movement,Option1,Option2,Option3
+Upper,Horizontal,Push,BP,PUP,
+Upper,Horizontal,Pull,DBR,RR,
+Upper,Vertical,Push,SOHP,MP,
+Upper,Vertical,Pull,PU,CU,
+Lower,Hip,Hinge,HT,RDL,
+Lower,Knee,Hinge,BSQ,SSQ,GSQ
+Lower,Ankle,Hinge,CR,,
+Core,Anterior,Contract,VUP,,
+Core,Posterior,Contract,SM,,
