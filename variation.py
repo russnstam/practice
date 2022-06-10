@@ -58,9 +58,18 @@ def type_limit():
         else:
             return e_l
 
-        
-print(type_limit()[0])
-print()
+def program_week(num):
+    count = ['One', 'Two', 'Three', 'Four']
+    for d in range(num):
+        print()
+        print(f"Day {count[d]} Workout:")
+        counter = 0
+        for i in type_limit()[0]:
+            print(f"Set {count[counter]}:")
+            counter += 1
+            for x in i:
+                print(x)
+    print()
 
-
+program_week(4)
 
