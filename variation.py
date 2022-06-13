@@ -39,25 +39,36 @@ def rules(set_list):
     # set_list represents the superset being checked
     e_list = [[0,1,2,3],[4,5,6],[7,8]]
     # e_list represents the exercise zones
+    check_list = []
     for a in e_list:
         num = set(a).intersection(set_list)
         if len(num) > 1:
-            return False
+            check_list.append(False)
         else:
-            return True
-    
+            check_list.append(True)
+    return check_list
 
 def type_limit():
-    while True:
+    counter = 0
+    while counter == 0:
         s = get_sets()
         g = get_germ()
         e_l = generate(s, g)
         bool_list = [rules(_) for _ in e_l[1]]
-        if False in bool_list:
-            continue
+        if False in checker(bool_list):
+            counter = counter
         else:
             return e_l
 
+def checker(bool_list):
+    checker = []
+    for i in bool_list:
+        if False in i:
+            checker.append(False)
+        else:
+            checker.append(True)
+    return checker
+        
 def program_week(num):
     count = ['One', 'Two', 'Three', 'Four']
     for d in range(num):
@@ -71,5 +82,4 @@ def program_week(num):
                 print(x)
     print()
 
-program_week(4)
-
+program_week(3)
